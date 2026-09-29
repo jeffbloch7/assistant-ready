@@ -69,11 +69,7 @@ h3 { font-size: 1.3rem; margin: 0 0 0.4em; }
   display: inline-flex; align-items: center; gap: 10px;
   font-weight: 700; font-size: 1.25rem; color: var(--teal-900); text-decoration: none;
 }
-.wordmark-mark {
-  display: inline-grid; place-items: center;
-  width: 40px; height: 40px; border-radius: 10px;
-  background: var(--teal-900); color: var(--amber); font-size: 1rem; letter-spacing: 0.5px;
-}
+.wordmark-mark { width: 46px; height: 40px; }
 .nav-links {
   list-style: none; margin: 0; padding: 0;
   display: flex; align-items: center; gap: 22px; flex-wrap: wrap;
@@ -212,7 +208,7 @@ input:focus, select:focus, textarea:focus { border-color: var(--teal-700); }
   body { font-size: 1.125rem; }
   .header-inner { flex-wrap: nowrap; min-height: 64px; }
   .wordmark { font-size: 1.1rem; gap: 8px; }
-  .wordmark-mark { width: 34px; height: 34px; font-size: 0.9rem; }
+  .wordmark-mark { width: 38px; height: 33px; }
   .nav-links { gap: 14px; }
   .nav-links li:not(:last-child) { display: none; }
   .btn-small { padding: 0 16px; white-space: nowrap; }

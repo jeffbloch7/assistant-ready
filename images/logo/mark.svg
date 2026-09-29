@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 104" role="img" aria-label="Assistant Ready">
+  <defs>
+    <mask id="cut" maskUnits="userSpaceOnUse" x="-10" y="-10" width="140" height="124">
+      <rect x="-10" y="-10" width="140" height="124" fill="#fff"/>
+      <path d="M8 70 C 14 96, 66 80, 100 32" fill="none" stroke="#000" stroke-width="18" stroke-linecap="round"/>
+    </mask>
+  </defs>
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M22 94 L52 14 L82 94" stroke="#0b3b47" stroke-width="14" mask="url(#cut)"/>
+    <path d="M8 70 C 14 96, 66 80, 100 32" stroke="#e9a23b" stroke-width="8"/>
+    <path d="M88.5 31 L104 26 L103.5 42" stroke="#e9a23b" stroke-width="8"/>
+    <path d="M78 8 L82 2 M88 14 L96 11 M84 20 L91 22" stroke="#e9a23b" stroke-width="4"/>
+  </g>
+</svg>
