@@ -231,8 +231,10 @@ input:focus, select:focus, textarea:focus { border-color: var(--teal-700); }
 .app-meta { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 8px; margin-bottom: 14px; }
 .app-status { font-size: 0.9rem; color: var(--ink-soft); }
 .app-status.live { color: #1c6b3a; font-weight: 700; }
-.app-link { margin-top: 16px; font-weight: 700; }
-.app-link::after { content: " \2192"; }
+.app-shot { display: block; margin: 0 0 16px; border-radius: 10px; overflow: hidden; border: 1px solid var(--line); }
+.app-shot img { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; object-position: left top; }
+.app-btn { margin-top: auto; align-self: flex-start; }
+.app-card p { margin-bottom: 18px; }
 
 /* Cream-on-cream fixes for untinted sections */
 .section:not(.section-tint) .safety-list li,
