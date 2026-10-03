@@ -241,3 +241,15 @@ input:focus, select:focus, textarea:focus { border-color: var(--teal-700); }
 /* Cream-on-cream fixes for untinted sections */
 .section:not(.section-tint) .safety-list li,
 .section:not(.section-tint) details { background: var(--white); border: 1px solid var(--line); }
+
+/* Featured project */
+.project-feature {
+  margin-top: 48px; display: grid; grid-template-columns: minmax(0, 420px) 1fr; gap: 36px; align-items: center;
+  background: var(--cream); border: 1px solid var(--line); border-radius: var(--radius); padding: 28px;
+}
+.project-image { display: block; border-radius: 10px; overflow: hidden; }
+.project-feature .tag { display: inline-block; }
+.project-feature p:not(.tag) { color: var(--ink-soft); margin: 0 0 18px; }
+@media (max-width: 720px) {
+  .project-feature { grid-template-columns: 1fr; gap: 20px; padding: 20px; }
+}
