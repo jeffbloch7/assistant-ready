@@ -219,7 +219,7 @@ input:focus, select:focus, textarea:focus { border-color: var(--teal-700); }
 }
 
 /* Ready-made apps */
-.app-grid { grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr)); }
+.app-grid { grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr)); }
 .section-lead { font-size: 1.2rem; color: var(--ink-soft); max-width: 62ch; margin: -0.4em 0 20px; }
 .badge-key { list-style: none; margin: 0 0 28px; padding: 0; display: grid; gap: 10px; color: var(--ink-soft); }
 .badge-key .badge { margin-right: 8px; }
