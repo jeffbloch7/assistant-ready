@@ -5,16 +5,16 @@
 
   var examples = [
     {
-      you: "Help me write a kind note declining my neighbor's party invite.",
-      claude: "Of course. Here's a warm one: “Hi Linda, thank you so much for thinking of us! We have a family commitment that evening, but I hope it's a wonderful party. Coffee soon?” Want it shorter or more casual?"
+      you: "Turn our family recipes into an app the grandkids can use on their phones.",
+      claude: "Done. I built a recipe app with all 48 recipes, searchable by name or ingredient. Here's the link to open it on any phone. Want to add photos next?"
     },
     {
-      you: "Turn my notes into a quote: new faucet, fix leak under sink, about 3 hours.",
-      claude: "Here's a clean quote for the Smith kitchen: 1. Replace faucet (parts and install). 2. Repair leak under sink. 3. Labor, about 3 hours. I left the prices blank for you to fill in. Want it as a PDF?"
+      you: "Add a quote calculator to my website that emails me each request.",
+      claude: "It's ready. Customers pick the job type and size and see an estimate right away. Each request lands in your inbox with their contact details. Want to preview it before it goes live?"
     },
     {
-      you: "Draft a friendly reminder that open enrollment closes Friday.",
-      claude: "Subject: Open enrollment closes Friday. Hi team, a quick reminder that benefits enrollment ends this Friday at 5pm. It takes about 10 minutes. Questions? Just reply to this email."
+      you: "Build an onboarding page new hires can open on their phones.",
+      claude: "Here it is: a 30-day checklist with the key forms and who to ask for what. New hires tick items off as they go. Shall I add your benefits FAQ?"
     }
   ];
 

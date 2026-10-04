@@ -145,6 +145,8 @@ h3 { font-size: 1.3rem; margin: 0 0 0.4em; }
 .per { font-size: 1.05rem; font-weight: 400; color: var(--ink-soft); }
 .price-card ul { margin: 0; padding-left: 1.2em; color: var(--ink-soft); }
 .price-card li { margin-bottom: 6px; }
+.price-subhead { margin: 44px 0 18px; font-size: 1.5rem; }
+.build-cards { grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); max-width: 760px; }
 .note { margin-top: 28px; color: var(--ink-soft); max-width: 70ch; }
 
 /* About */
