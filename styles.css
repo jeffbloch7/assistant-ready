@@ -147,6 +147,16 @@ h3 { font-size: 1.3rem; margin: 0 0 0.4em; }
 .price-card li { margin-bottom: 6px; }
 .price-subhead { margin: 44px 0 18px; font-size: 1.5rem; }
 .build-cards { grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); max-width: 760px; }
+/* Compact pricing: smaller cards so prices don't dominate the page */
+#pricing .cards { gap: 14px; }
+#pricing .price-card { padding: 18px 20px; box-shadow: none; }
+#pricing .price-card h3 { font-size: 1.1rem; margin: 0 0 2px; }
+#pricing .price { font-size: 1.5rem; margin: 2px 0 8px !important; }
+#pricing .per { font-size: 0.95rem; }
+#pricing .price-card ul { font-size: 0.95rem; }
+#pricing .price-card li { margin-bottom: 4px; }
+#pricing .tag { font-size: 0.8rem; margin-bottom: 8px !important; }
+#pricing .price-subhead { margin: 32px 0 14px; font-size: 1.25rem; }
 .note { margin-top: 28px; color: var(--ink-soft); max-width: 70ch; }
 
 /* About */
