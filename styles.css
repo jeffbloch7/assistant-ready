@@ -230,6 +230,7 @@ input:focus, select:focus, textarea:focus { border-color: var(--teal-700); }
 .app-status.live { color: #1c6b3a; font-weight: 700; }
 .app-shot { display: block; margin: 0 0 16px; border-radius: 10px; overflow: hidden; border: 1px solid var(--line); }
 .app-shot img { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; object-position: left top; }
+.app-shot video { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; background: #000; }
 .app-btn { margin-top: auto; align-self: flex-start; }
 .app-card p { margin-bottom: 18px; }
 
