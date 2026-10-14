@@ -13,14 +13,14 @@
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="theme-color" content="#0b3b47">
+  <meta name="theme-color" content="#fff6ea">
   <link rel="icon" href="images/logo/icon.svg" type="image/svg+xml">
   <link rel="icon" href="images/logo/favicon-32.png" sizes="32x32" type="image/png">
   <link rel="apple-touch-icon" href="images/logo/apple-touch-icon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=4">
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=5">
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -33,11 +33,11 @@
       </a>
       <nav aria-label="Main">
         <ul class="nav-links">
-          <li><a href="#how">How it works</a></li>
           <li><a href="#apps">Apps</a></li>
+          <li><a href="#how">How it works</a></li>
           <li><a href="#pricing">Pricing</a></li>
           <li><a href="#about">About</a></li>
-          <li><a href="#contact" class="btn btn-small">Get started</a></li>
+          <li><a href="#contact" class="btn btn-small">Book a session</a></li>
         </ul>
       </nav>
     </div>
@@ -45,188 +45,115 @@
 
   <main id="main">
     <section class="hero" id="top">
-      <div class="container hero-grid">
-        <div class="hero-copy">
-          <p class="founding-banner"><strong>Community rate:</strong> $99 setup if money's tight right now</p>
-          <h1>Your AI assistant, set up safely. Your ideas, built into real apps.</h1>
-          <p class="lead">One-on-one video sessions that get Claude working on your computer, then turn your personal or business ideas into websites and apps you can use on your phone. Patient, plain English, no tech background needed.</p>
-          <div class="hero-actions">
-            <a href="#contact" class="btn">Get started</a>
-            <a href="#examples" class="btn btn-ghost">See what it can do</a>
-          </div>
-          <div class="hero-host">
-            <img src="images/jeff.jpg" alt="" width="56" height="56">
-            <p>Sessions with <strong>Jeff Bloch</strong><br>Co-founder of MallorcaGuide.com</p>
-          </div>
+      <div class="container hero-inner">
+        <h1>Your idea, built into a <mark>real&nbsp;app</mark></h1>
+        <p class="lead">One-on-one video sessions with Jeff. Plain English. No tech background needed.</p>
+        <div class="hero-actions">
+          <a href="#contact" class="btn">Book a session</a>
+          <a href="#apps" class="btn btn-ghost">See apps I've built</a>
         </div>
-
-        <div class="chat-demo" aria-label="Example conversations with Claude">
-          <div class="chat-top">
-            <span class="chat-dots" aria-hidden="true"><i></i><i></i><i></i></span>
-            <div class="chat-tabs" role="group" aria-label="Choose an example">
-              <button type="button" data-i="0" aria-pressed="true">Personal</button>
-              <button type="button" data-i="1" aria-pressed="false">Small business</button>
-              <button type="button" data-i="2" aria-pressed="false">HR</button>
-            </div>
-          </div>
-          <div class="chat-body" aria-live="polite">
-            <p class="bubble bubble-you"></p>
-            <p class="bubble bubble-claude"></p>
-          </div>
-          <p class="chat-caption">An example of an idea built with Claude</p>
-        </div>
+        <ul class="shortcuts" aria-label="Apps by who they're for">
+          <li><a href="#apps" data-filter="personal"><img src="images/shortcuts/family.jpg" alt="" width="96" height="96">For you and family</a></li>
+          <li><a href="#apps" data-filter="business"><img src="images/shortcuts/business.jpg" alt="" width="96" height="96">For your business</a></li>
+          <li><a href="#apps" data-filter="hr"><img src="images/shortcuts/hr.jpg" alt="" width="96" height="96">For HR teams</a></li>
+        </ul>
+      </div>
+      <div class="container reel" aria-label="A few of the apps, playing">
+        <figure><video src="images/projects/mallorcaguide-sample.mp4" poster="images/projects/mallorcaguide-sample-poster.jpg" width="1280" height="720" autoplay muted loop playsinline preload="metadata" aria-hidden="true"></video><figcaption>MallorcaGuide <span>Business</span></figcaption></figure>
+        <figure><video src="images/apps/journey-sample.mp4" poster="images/apps/journey-sample-poster.jpg" width="1280" height="720" autoplay muted loop playsinline preload="metadata" aria-hidden="true"></video><figcaption>Trip Photo Videos <span>Personal</span></figcaption></figure>
+        <figure><video src="images/apps/communication-expert-sample.mp4" poster="images/apps/communication-expert-sample-poster.jpg" width="1280" height="720" autoplay muted loop playsinline preload="metadata" aria-hidden="true"></video><figcaption>Communication Expert <span>HR</span></figcaption></figure>
       </div>
     </section>
 
-    <section class="trust-strip" aria-label="My promises">
-      <ul class="container">
-        <li>I never ask for passwords</li>
-        <li>You stay in control</li>
-        <li>Full refund if you're not up and running</li>
-        <li>Plain English, at your pace</li>
-      </ul>
-    </section>
-
-    <section class="section" id="examples" aria-labelledby="examples-title">
+    <section class="section band" id="apps" aria-labelledby="apps-title">
       <div class="container">
-        <h2 id="examples-title">What could you build?</h2>
-        <p class="section-lead">Bring your own idea to life with Claude: a website, an app on your phone, or a tool that does the work for you. Here are a few to spark ideas.</p>
-        <div class="seg-tabs" role="tablist" aria-label="Who it's for">
-          <button type="button" role="tab" id="tab-personal" aria-controls="panel-personal" aria-selected="true">Personal</button>
-          <button type="button" role="tab" id="tab-business" aria-controls="panel-business" aria-selected="false" tabindex="-1">Small business</button>
-          <button type="button" role="tab" id="tab-hr" aria-controls="panel-hr" aria-selected="false" tabindex="-1">HR teams</button>
+        <h2 id="apps-title">Apps I've built</h2>
+        <p class="section-lead">Pick one and I'll set it up in your own accounts, with your name, colors and content.</p>
+        <div class="filters" role="group" aria-label="Show apps for">
+          <button type="button" data-filter="all" aria-pressed="true">All</button>
+          <button type="button" data-filter="personal" aria-pressed="false">Personal</button>
+          <button type="button" data-filter="business" aria-pressed="false">Business</button>
+          <button type="button" data-filter="hr" aria-pressed="false">HR teams</button>
         </div>
-
-        <div class="example-grid" role="tabpanel" id="panel-personal" aria-labelledby="tab-personal">
-          <article class="example"><p class="ask">&ldquo;I want our family recipes in an app the grandkids can search.&rdquo;</p><p class="got">A private recipe app on everyone's phone</p></article>
-          <article class="example"><p class="ask">&ldquo;Help me practice Spanish out loud before our trip.&rdquo;</p><p class="got">A speaking coach that listens and shows you the words</p></article>
-          <article class="example"><p class="ask">&ldquo;Plan our group trip in one place everyone can see.&rdquo;</p><p class="got">A shared trip site with the schedule, maps and costs</p></article>
+        <div class="app-grid">
+          <article class="app-card" data-for="business">
+            <div class="app-shot"><video src="images/projects/mallorcaguide-sample.mp4" poster="images/projects/mallorcaguide-sample-poster.jpg" width="1280" height="720" autoplay muted loop playsinline controls preload="metadata" aria-label="MallorcaGuide in use: scrolling through photo cards of top places, then choosing Beaches to see rated beaches around the island"></video></div>
+            <div class="app-meta"><h3>MallorcaGuide.com</h3><span class="badge badge-live">Live website</span></div>
+            <p>The island's events, places and guides, in 10 languages.</p>
+            <details class="more"><summary>More</summary><p>A complete guide to the island of Mallorca: an events calendar, places, travel guides, news and a newsletter. Anyone can add an event or guide for free, and the site translates it into 10 languages. I co-founded MallorcaGuide, and it's built and maintained with the latest AI tools.</p><p><a href="https://mallorcaguide.com" target="_blank" rel="noopener">Visit MallorcaGuide.com <span aria-hidden="true">&#8599;</span><span class="sr-only"> (opens in a new tab)</span></a></p></details>
+          </article>
+          <article class="app-card" data-for="personal">
+            <div class="app-shot"><video src="images/apps/family-messages-sample.mp4" poster="images/apps/family-messages-sample-poster.jpg" width="1280" height="720" autoplay muted loop playsinline controls preload="metadata" aria-label="Big-Screen Family Messages on a TV: a large clock and date, then pressing NEXT shows a message from Jeff in very large white text on black, with a prompt to press TALK to reply"></video></div>
+            <div class="app-meta"><h3>Big-Screen Family Messages</h3><span class="badge badge-together">Setup together</span></div>
+            <p>Family texts show up huge on Mom's TV, and are read aloud.</p>
+            <details class="more"><summary>More</summary><p>For an aging parent who struggles with texting. Family send messages from their phones, and they appear on the TV in huge, clear text and are read aloud in a natural voice. One key records a spoken reply, and the family gets it with a written transcript.</p></details>
+          </article>
+          <article class="app-card" data-for="personal">
+            <div class="app-shot"><video src="images/apps/journey-sample.mp4" poster="images/apps/journey-sample-poster.jpg" width="1280" height="720" autoplay muted loop playsinline controls preload="metadata" aria-label="Sample Trip Photo Video, opening on a satellite map pinned at Mallorca, July 2024"></video></div>
+            <div class="app-meta"><h3>Trip Photo Videos</h3><span class="badge badge-together">Setup together</span></div>
+            <p>Your iPhone trip photos, turned into a map-flying travel movie.</p>
+            <details class="more"><summary>More</summary><p>It groups your photos by place, picks the best shots, skips screenshots and duplicates, and flies a map from one stop to the next with names and dates. Run it again after every trip.</p></details>
+          </article>
+          <article class="app-card" data-for="personal">
+            <div class="app-shot"><video src="images/apps/movie-table-sample.mp4" poster="images/apps/movie-table-sample-poster.jpg" width="1280" height="720" autoplay muted loop playsinline controls preload="metadata" aria-label="Movie Table in use: opening top-rated movies to see the plot, cast, scores, and which streaming services carry each one with audio and subtitle languages"></video></div>
+            <div class="app-meta"><h3>Movie Table</h3><span class="badge badge-together">Setup together</span></div>
+            <p>Which of your services has it, in which languages, and is it any good.</p>
+            <details class="more"><summary>More</summary><p>Find movies by genre, actor and rating, see which of your streaming services has them, with audio and subtitle languages, and IMDb and Rotten Tomatoes scores. Keep a shared watch list, rate what you've seen, and get "more like this" picks.</p></details>
+          </article>
+          <article class="app-card" data-for="personal business hr">
+            <div class="app-shot"><video src="images/apps/pharmacy-tech-study-sample.mp4" poster="images/apps/pharmacy-tech-study-sample-poster.jpg" width="1280" height="720" autoplay muted loop playsinline controls preload="metadata" aria-label="Personal Learning System in use, set up for a pharmacy technician course: weekly study progress, mock exam grades, course modules with progress bars, flashcard decks and digital skills help"></video></div>
+            <div class="app-meta"><h3>Personal Learning System</h3><span class="badge badge-done">Done for you</span></div>
+            <p>Daily flashcards, quizzes and progress for any course or exam.</p>
+            <details class="more"><summary>More</summary><p>A daily study companion for any course, exam or new skill: flashcards scheduled for review, practice quizzes, summaries and progress for every module, in the languages you need.</p></details>
+          </article>
+          <article class="app-card" data-for="hr business personal">
+            <div class="app-shot"><video src="images/apps/communication-expert-sample.mp4" poster="images/apps/communication-expert-sample-poster.jpg" width="1280" height="720" autoplay muted loop playsinline controls preload="metadata" aria-label="Become a Communication Expert in use: reading what a boss really means, choosing Flare, then choosing the Sage voice and seeing the strongest response"></video></div>
+            <div class="app-meta"><h3>Become a Communication Expert</h3><span class="badge badge-done">Done for you</span></div>
+            <p>Real-life scenes: read what they really mean, then choose your reply.</p>
+            <details class="more"><summary>More</summary><p>A game of real-life scenes for employees, bosses, spouses and parents. Read what's really behind what someone says, then choose how to meet it, scoring points as you go. In English and Spanish.</p></details>
+          </article>
+          <article class="app-card" data-for="personal">
+            <div class="app-shot"><video src="images/apps/what-they-would-do-sample.mp4" poster="images/apps/what-they-would-do-sample-poster.jpg" width="1280" height="720" autoplay muted loop playsinline controls preload="metadata" aria-label="What They Would Do in use: asking how to help a friend who lost her job, choosing Robin Williams, the Buddha, Jesus and Viktor Frankl, then pressing Ask them as each card starts thinking"></video></div>
+            <div class="app-meta"><h3>What They Would Do</h3><span class="badge badge-together">Setup together</span></div>
+            <p>Ask a question and see how five iconic people would respond.</p>
+            <details class="more"><summary>More</summary><p>Describe what's happening, pick up to five people, from philosophers and spiritual leaders to business titans, comedians and fictional characters, and see how each would likely respond.</p></details>
+          </article>
+          <article class="app-card" data-for="personal">
+            <div class="app-shot"><video src="images/apps/spanish-speaking-sample.mp4" poster="images/apps/spanish-speaking-sample-poster.jpg" width="1280" height="720" autoplay muted loop playsinline controls preload="metadata" aria-label="Spanish Speaking Practice reading mode: opening The Prophet, then key words with pictures and pronunciation, and each passage in English and Spanish with matching words color-coded"></video></div>
+            <div class="app-meta"><h3>Spanish Speaking Practice</h3><span class="badge badge-together">Setup together</span></div>
+            <p>Say it, see it in both languages, hear yourself, read the classics.</p>
+            <details class="more"><summary>More</summary><p>Say a sentence, see it in English and Spanish with matching words color-coded, then say it again and hear your own recording. A 1-on-1 mode lets you hold a real conversation, and a reading mode takes you through short classic books, with pictures and how to say each key word.</p></details>
+          </article>
         </div>
-        <div class="example-grid" role="tabpanel" id="panel-business" aria-labelledby="tab-business" hidden>
-          <article class="example"><p class="ask">&ldquo;Customers should get a price on my website instantly.&rdquo;</p><p class="got">A quote calculator on your site that sends you the lead</p></article>
-          <article class="example"><p class="ask">&ldquo;Draft a reply to every new inquiry in my inbox.&rdquo;</p><p class="got">An assistant that prepares replies for you to approve</p></article>
-          <article class="example"><p class="ask">&ldquo;Show me this week's sales on my phone.&rdquo;</p><p class="got">A simple dashboard from QuickBooks or Square</p></article>
-        </div>
-        <div class="example-grid" role="tabpanel" id="panel-hr" aria-labelledby="tab-hr" hidden>
-          <article class="example"><p class="ask">&ldquo;New hires need one place for their first 30 days.&rdquo;</p><p class="got">An onboarding portal they open on their phone</p></article>
-          <article class="example"><p class="ask">&ldquo;Employees keep asking the same policy questions.&rdquo;</p><p class="got">A Q&amp;A assistant that answers from your handbook</p></article>
-          <article class="example"><p class="ask">&ldquo;Our managers need practice with hard conversations.&rdquo;</p><p class="got">A role-play trainer with real-life scenes</p></article>
-        </div>
-        <p class="examples-more">Most ideas start with a setup session, then we build them together. <a href="#apps">See apps I've built</a> &rarr;</p>
+        <ul class="badge-key">
+          <li><span class="badge badge-done">Done for you</span> Nothing to sign up for.</li>
+          <li><span class="badge badge-together">Setup together</span> We create a free or pay-as-you-go account in your name, in about 15 minutes.</li>
+        </ul>
+        <p class="band-note">Everything is set up in your name, so you own it. Have an idea that isn't listed? <a href="#contact">Tell me about it</a>.</p>
       </div>
     </section>
 
-    <section class="section section-tint" id="how" aria-labelledby="how-title">
+    <section class="section" id="how" aria-labelledby="how-title">
       <div class="container">
         <h2 id="how-title">How it works</h2>
         <ol class="steps">
           <li>
-            <h3>Get in touch</h3>
-            <p>Tell me a little about what you'd like help with, and we'll pick a time.</p>
+            <h3>Tell me your idea</h3>
+            <p>A few lines about what you'd like. We pick a time, and I send a 20-minute prep checklist.</p>
           </li>
           <li>
-            <h3>A 20-minute prep</h3>
-            <p>A simple checklist to set up your Claude account and app beforehand, so our time goes to your work.</p>
-          </li>
-          <li>
-            <h3>Your 75-minute session</h3>
-            <p>Over video, you share your screen and we set things up together, then use Claude on three real tasks you choose.</p>
+            <h3>One video session</h3>
+            <p>75 minutes. You share your screen, and we set things up and use it on real tasks together.</p>
           </li>
           <li>
             <h3>Recap and follow-up</h3>
-            <p>A written recap with your next steps, plus 14 days of email follow-up for questions.</p>
+            <p>A written recap with next steps, plus 14 days of email help.</p>
           </li>
         </ol>
       </div>
     </section>
 
-    <section class="section" id="safety" aria-labelledby="safety-title">
-      <div class="container">
-        <h2 id="safety-title">Rules I never break</h2>
-        <ol class="rules">
-          <li><h3>You do the typing.</h3><p>You share your screen. I never take control of your computer.</p></li>
-          <li><h3>No passwords. Ever.</h3><p>Not your passwords, security codes or payment details.</p></li>
-          <li><h3>Only what you need.</h3><p>We connect only the tools you'll use, with careful permissions.</p></li>
-          <li><h3>Employee data stays protected.</h3><p>HR clients use a company-approved plan and a clear list of what never goes in.</p></li>
-        </ol>
-        <p class="scam-note"><strong>Scam alert:</strong> Anthropic, the company that makes Claude, will never phone you or ask for access to your computer. Anyone who does is a scammer.</p>
-      </div>
-    </section>
-
-    <section class="section section-tint" id="apps" aria-labelledby="apps-title">
-      <div class="container">
-        <h2 id="apps-title">Ready-made websites and apps</h2>
-        <p class="section-lead">Want something built for you? Pick a ready-made website or app, and I'll set it up in your own accounts and customize it with you: your name, your colors, your content.</p>
-        <article class="project-feature">
-          <div class="project-image"><video src="images/projects/mallorcaguide-sample.mp4" poster="images/projects/mallorcaguide-sample-poster.jpg" width="1280" height="720" autoplay muted loop playsinline controls preload="metadata" aria-label="MallorcaGuide in use: scrolling through photo cards of top places, then choosing Beaches to see rated beaches around the island"></video></div>
-          <div>
-            <p class="tag">Business websites and apps</p>
-            <h3>MallorcaGuide.com</h3>
-            <p>A complete guide to the island of Mallorca: an events calendar, places, travel guides, news and a newsletter. Anyone can add an event or guide for free, and the site translates it into 10 languages for visitors from around the world.</p>
-            <p>I co-founded MallorcaGuide, and it's built and maintained using the latest AI tools.</p>
-            <a href="https://mallorcaguide.com" target="_blank" rel="noopener" class="btn btn-small btn-ghost">Visit MallorcaGuide.com <span aria-hidden="true">&#8599;</span><span class="sr-only"> (opens in a new tab)</span></a>
-          </div>
-        </article>
-        <ul class="badge-key">
-          <li><span class="badge badge-done">Done for you</span> Nothing to sign up for. I set it up completely.</li>
-          <li><span class="badge badge-together">Setup together</span> Needs a free or pay-as-you-go account in your name, which we create together in about 15 minutes.</li>
-        </ul>
-        <div class="cards app-grid">
-          <article class="card app-card">
-            <div class="app-meta"><span class="badge badge-together">Setup together</span><span class="app-status live">Available now</span></div>
-            <div class="app-shot"><video src="images/apps/family-messages-sample.mp4" poster="images/apps/family-messages-sample-poster.jpg" width="1280" height="720" autoplay muted loop playsinline controls preload="metadata" aria-label="Big-Screen Family Messages on a TV: a large clock and date, then pressing NEXT shows a message from Jeff in very large white text on black, with a prompt to press TALK to reply"></video></div>
-            <h3>Big-Screen Family Messages</h3>
-            <p>For an aging parent who struggles with texting. Family send messages from their phones, and they appear on the TV in huge, clear text and are read aloud in a natural voice. One key records a spoken reply, and the family gets it with a written transcript.</p>
-            <a href="#contact" class="btn btn-small btn-ghost app-btn">Demo on request</a>
-          </article>
-          <article class="card app-card">
-            <div class="app-meta"><span class="badge badge-together">Setup together</span><span class="app-status live">Available now</span></div>
-            <div class="app-shot"><video src="images/apps/journey-sample.mp4" poster="images/apps/journey-sample-poster.jpg" width="1280" height="720" autoplay muted loop playsinline controls preload="metadata" aria-label="Sample Trip Photo Video, opening on a satellite map pinned at Mallorca, July 2024"></video></div>
-            <h3>Trip Photo Videos</h3>
-            <p>Turns the photos on your iPhone into a travel movie. It groups them by place, picks the best shots, skips screenshots and duplicates, and flies a map from one stop to the next with names and dates. Run it again after every trip.</p>
-            <a href="#contact" class="btn btn-small btn-ghost app-btn">Demo on request</a>
-          </article>
-          <article class="card app-card">
-            <div class="app-meta"><span class="badge badge-together">Setup together</span><span class="app-status live">Available now</span></div>
-            <div class="app-shot"><video src="images/apps/movie-table-sample.mp4" poster="images/apps/movie-table-sample-poster.jpg" width="1280" height="720" autoplay muted loop playsinline controls preload="metadata" aria-label="Movie Table in use: opening top-rated movies to see the plot, cast, scores, and which streaming services carry each one with audio and subtitle languages"></video></div>
-            <h3>Movie Table</h3>
-            <p>Find movies by genre, actor and rating, see which of your streaming services has them, with audio and subtitle languages, and IMDb and Rotten Tomatoes scores. Keep a shared watch list, rate what you've seen, and get "more like this" picks.</p>
-            <a href="#contact" class="btn btn-small btn-ghost app-btn">Demo on request</a>
-          </article>
-          <article class="card app-card">
-            <div class="app-meta"><span class="badge badge-done">Done for you</span><span class="app-status live">Available now</span></div>
-            <div class="app-shot"><video src="images/apps/pharmacy-tech-study-sample.mp4" poster="images/apps/pharmacy-tech-study-sample-poster.jpg" width="1280" height="720" autoplay muted loop playsinline controls preload="metadata" aria-label="Personal Learning System in use, set up for a pharmacy technician course: weekly study progress, mock exam grades, course modules with progress bars, flashcard decks and digital skills help"></video></div>
-            <h3>Personal Learning System</h3>
-            <p>A daily study companion for any course, exam or new skill: flashcards scheduled for review, practice quizzes, summaries and progress for every module, in the languages you need.</p>
-            <a href="#contact" class="btn btn-small btn-ghost app-btn">Demo on request</a>
-          </article>
-          <article class="card app-card">
-            <div class="app-meta"><span class="badge badge-done">Done for you</span><span class="app-status live">Available now</span></div>
-            <div class="app-shot"><video src="images/apps/communication-expert-sample.mp4" poster="images/apps/communication-expert-sample-poster.jpg" width="1280" height="720" autoplay muted loop playsinline controls preload="metadata" aria-label="Become a Communication Expert in use: reading what a boss really means, choosing Flare, then choosing the Sage voice and seeing the strongest response"></video></div>
-            <h3>Become a Communication Expert</h3>
-            <p>A game of real-life scenes for employees, bosses, spouses and parents. Read what's really behind what someone says, then choose how to meet it, scoring points as you go. In English and Spanish.</p>
-            <a href="#contact" class="btn btn-small btn-ghost app-btn">Demo on request</a>
-          </article>
-          <article class="card app-card">
-            <div class="app-meta"><span class="badge badge-together">Setup together</span><span class="app-status live">Available now</span></div>
-            <div class="app-shot"><video src="images/apps/what-they-would-do-sample.mp4" poster="images/apps/what-they-would-do-sample-poster.jpg" width="1280" height="720" autoplay muted loop playsinline controls preload="metadata" aria-label="What They Would Do in use: asking how to help a friend who lost her job, choosing Robin Williams, the Buddha, Jesus and Viktor Frankl, then pressing Ask them as each card starts thinking"></video></div>
-            <h3>What They Would Do</h3>
-            <p>Describe what's happening, pick up to five iconic people, from philosophers and spiritual leaders to business titans, comedians and fictional characters, and see how each would likely respond.</p>
-            <a href="#contact" class="btn btn-small btn-ghost app-btn">Demo on request</a>
-          </article>
-          <article class="card app-card">
-            <div class="app-meta"><span class="badge badge-together">Setup together</span><span class="app-status live">Available now</span></div>
-            <div class="app-shot"><video src="images/apps/spanish-speaking-sample.mp4" poster="images/apps/spanish-speaking-sample-poster.jpg" width="1280" height="720" autoplay muted loop playsinline controls preload="metadata" aria-label="Spanish Speaking Practice reading mode: opening The Prophet, then key words with pictures and pronunciation, and each passage in English and Spanish with matching words color-coded"></video></div>
-            <h3>Spanish Speaking Practice</h3>
-            <p>Practice out loud: say a sentence, see it in English and Spanish with matching words color-coded, then say it again and hear your own recording. A 1-on-1 mode lets you hold a real conversation, and a reading mode takes you through short classic books, with pictures and how to say each key word.</p>
-            <a href="#contact" class="btn btn-small btn-ghost app-btn">Demo on request</a>
-          </article>
-        </div>
-        <p class="note">Everything is set up in your name, so you own it and can keep it running without me. Have an idea that isn't listed? <a href="#contact">Tell me about it</a>.</p>
-      </div>
-    </section>
-
-    <section class="section" id="pricing" aria-labelledby="pricing-title">
+    <section class="section section-tint" id="pricing" aria-labelledby="pricing-title">
       <div class="container">
         <h2 id="pricing-title">Pricing</h2>
         <div class="cards four">
@@ -278,7 +205,7 @@
       </div>
     </section>
 
-    <section class="section section-tint" id="about" aria-labelledby="about-title">
+    <section class="section" id="about" aria-labelledby="about-title">
       <div class="container about">
         <img src="images/jeff.jpg" alt="Jeff Bloch" class="about-photo" width="528" height="505" loading="lazy">
         <div>
@@ -300,6 +227,19 @@
           </figure>
         </div>
         <p class="quotes-source"><a href="https://www.linkedin.com/in/jeffbloch/" target="_blank" rel="noopener">See more recommendations on LinkedIn</a></p>
+      </div>
+    </section>
+
+    <section class="section section-tint" id="safety" aria-labelledby="safety-title">
+      <div class="container">
+        <h2 id="safety-title">Rules I never break</h2>
+        <ul class="promises">
+          <li><p><strong>You do the typing.</strong> I never take control of your computer.</p></li>
+          <li><p><strong>No passwords. Ever.</strong> Not yours, not your codes, not your card.</p></li>
+          <li><p><strong>Only what you need.</strong> We connect just the tools you'll use.</p></li>
+          <li><p><strong>Full refund</strong> if you're not up and running after our session.</p></li>
+        </ul>
+        <p class="scam-note"><strong>Scam alert:</strong> Anthropic, the company that makes Claude, will never phone you or ask for access to your computer. Anyone who does is a scammer.</p>
       </div>
     </section>
 
@@ -333,9 +273,9 @@
       </div>
     </section>
 
-    <section class="section section-tint" id="contact" aria-labelledby="contact-title">
+    <section class="section contact-band" id="contact" aria-labelledby="contact-title">
       <div class="container narrow">
-        <h2 id="contact-title">Get started</h2>
+        <h2 id="contact-title">Book a session</h2>
         <p>Tell me a bit about what you'd like help with. I'll reply personally within one business day.</p>
 
         <form id="contact-form" class="contact-form" action="https://api.web3forms.com/submit" method="POST" novalidate>
@@ -384,6 +324,6 @@
   </footer>
 
   <script src="form.js"></script>
-  <script src="site.js?v=3"></script>
+  <script src="site.js?v=4"></script>
 </body>
 </html>
