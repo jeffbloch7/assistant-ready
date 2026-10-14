@@ -244,6 +244,7 @@ input:focus, select:focus, textarea:focus { border-color: var(--teal-700); }
 }
 .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
 .project-image { display: block; border-radius: 10px; overflow: hidden; }
+.project-image video { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; background: #000; }
 .project-feature .tag { display: inline-block; }
 .project-feature p:not(.tag) { color: var(--ink-soft); margin: 0 0 18px; }
 @media (max-width: 720px) {

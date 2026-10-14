@@ -91,3 +91,19 @@
     });
   });
 })();
+
+// Sample videos: play only while on screen, and not at all for reduced motion.
+(function () {
+  var videos = document.querySelectorAll('video[autoplay]');
+  var reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  videos.forEach(function (v) { v.removeAttribute('autoplay'); v.pause(); });
+  if (reduced || !('IntersectionObserver' in window)) return;
+
+  var observer = new IntersectionObserver(function (entries) {
+    entries.forEach(function (e) {
+      if (e.isIntersecting) e.target.play().catch(function () {});
+      else e.target.pause();
+    });
+  }, { threshold: 0.4 });
+  videos.forEach(function (v) { observer.observe(v); });
+})();
