@@ -1,4 +1,4 @@
-// App filters: All / Personal / Business / HR, also set by the round shortcuts in the hero.
+// App filters: All / Business / Personal, also set by the round shortcuts in the hero.
 (function () {
   var buttons = Array.prototype.slice.call(document.querySelectorAll('.filters button'));
   var cards = Array.prototype.slice.call(document.querySelectorAll('.app-card[data-for]'));
