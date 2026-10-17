@@ -173,6 +173,7 @@ h3 { font-size: 1.3rem; font-weight: 600; letter-spacing: -0.015em; margin: 0 0 
 }
 .app-card[hidden] { display: none; }
 .app-card > p { margin: 0 6px; color: var(--on-black-soft); }
+.app-card > .app-disclaimer { margin-top: -4px; font-size: 0.85rem; color: var(--on-black-soft); opacity: 0.8; }
 .app-shot { border-radius: 12px; overflow: hidden; }
 .app-shot video { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; background: #000; }
 .app-meta { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 4px 10px; margin: 8px 6px 0; }
